@@ -32,14 +32,14 @@ pip install -r requirements.txt
 
 4. **Train the Models**
 
-Open the notebook and run it:
+- Open the notebook and run it:
 
 ```bash
 cd notebooks
 jupyter notebook mnist_training.ipynb
 ```
 
-Trained models will be saved in the models/ directory.
+- Trained models will be saved in the models/ directory.
 
 5. Run the Gradio App
 ```bash
@@ -47,7 +47,7 @@ cd ..
 python app.py
 ```
 
-The app will launch in your browser. Draw a digit and select the model (SGD, RandomForest, or Both) to classify.
+- The app will launch in your browser. Draw a digit and select the model (SGD, RandomForest, or Both) to classify.
 
 
 # 🖼️ Demo
