@@ -1,15 +1,12 @@
-# MNIST Digit Recognizer
+# Regression and Classification Deep Dive
 
-This project includes:
-- A Jupyter notebook for training and evaluating models on the MNIST dataset.
-- A Gradio web app to draw digits and classify them using trained models.
+This project implements Task 02 of the ARCH Technologies Machine Learning Internship (Category B), focusing on regression and classification models as outlined in Chapter 4 of Hands-On Machine Learning. It includes model training, evaluation, and optimization for regression (synthetic quadratic data) and classification (Iris dataset), along with a Gradio web app for interactive predictions.
 
 ## 📁 Structure
 
-- `notebooks/mnist_training.ipynb`: Model training and evaluation
-- `models/`: Saved trained models
-- `app.py`: Gradio interface for digit recognition
-- `requirements.txt`: Dependencies
+- `notebooks`: includes all the python notebooks which have code
+- `dataset/`: includes the dataset being used
+- `Reports/`: Includes report of the project
 
 ## 🚀 How to Run
 
@@ -25,33 +22,37 @@ python -m venv venv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
 ```
 
-3. **Install Dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-4. **Train the Models**
+3. **Train the Models**
 
 - Open the notebook and run it:
 
 ```bash
 cd notebooks
-jupyter notebook mnist_training.ipynb
+jupyter notebook Custom-Dataset-Implementation.ipynb
 ```
 
-- Trained models will be saved in the models/ directory.
+# 📝 Project Details
 
-5. Run the Gradio App
-```bash
-cd ..
-python app.py
-```
+### Datasets:
 
-- The app will launch in your browser. Draw a digit and select the model (SGD, RandomForest, or Both) to classify.
+- Regression: Synthetic quadratic data (100 samples, y = 0.5x² + x + 2 + noise).
+- Classification: Iris dataset (150 samples, 3 classes, using petal length/width).
 
+### Models:
 
-# 🖼️ Demo
+- Regression: Linear Regression, Ridge, Lasso, Elastic Net (degree=2 polynomial features).
+- Classification: Logistic Regression (OvR), Softmax Regression.
 
-Here’s how the app looks in action:
+### Metrics:
 
-![image](https://github.com/user-attachments/assets/294856b2-0a61-486e-bf01-ade9e32991fc)
+- Regression: RMSE, R².
+- Classification: Accuracy, F1-score.
+- Additional: Training time, feature importance (coefficients).
+  
+### Visualizations:
+
+- Learning curves for Linear and Polynomial Regression.
+- Coefficient analysis across models.
+-- Validation loss for custom Softmax Regression (Exercise 12).
+
+Custom Implementation: Batch Gradient Descent with early stopping for Softmax Regression (Chapter 4, Exercise 12).
