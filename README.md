@@ -20,3 +20,12 @@ This repository demonstrates proficiency in machine learning model development, 
 - Includes custom Batch Gradient Descent for Softmax Regression (Chapter 4, Exercise 12).
 - Features a Gradio app for regression and Iris species prediction.
 Based on Chapter 4 of Hands-On Machine Learning.
+
+# 🚀 Getting Started
+
+### Prerequisites
+
+- Python 3.8+
+- Git
+- Jupyter Notebook
+- Virtual environment (recommended)
