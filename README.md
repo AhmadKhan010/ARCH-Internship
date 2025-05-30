@@ -21,7 +21,7 @@ This repository demonstrates proficiency in machine learning model development, 
 - Features a Gradio app for regression and Iris species prediction.
 Based on Chapter 4 of Hands-On Machine Learning.
 
-# 🚀 Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
